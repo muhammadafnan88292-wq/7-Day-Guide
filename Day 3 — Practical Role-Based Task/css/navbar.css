@@ -1,0 +1,8 @@
+.navbar { background: white; padding: 16px 5%; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.nav-logo { font-size: 1.5rem; font-weight: 800; text-decoration: none; color: #111827; }
+.nav-links { display: flex; list-style: none; gap: 24px; align-items: center; }
+.nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; transition: color 0.3s; }
+.nav-links a:hover, .nav-links a:focus { color: #4f46e5; outline: 2px solid #4f46e5; outline-offset: 2px; }
+.btn-nav { background: #4f46e5; color: white !important; padding: 8px 16px; border-radius: 8px; }
+@media (max-width: 600px) { .nav-links { gap: 12px; font-size: 0.9rem; } }

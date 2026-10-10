@@ -1,0 +1,10 @@
+.hero { padding: 80px 5%; background: white; }
+.hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1200px; margin: 0 auto; align-items: center; }
+.hero-content h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 16px; }
+.hero-content p { color: #6b7280; margin-bottom: 24px; font-size: 1.1rem; }
+.hero-buttons { display: flex; gap: 12px; }
+.btn-primary { background: #4f46e5; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: all 0.3s; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(79,70,229,0.3); }
+.btn-secondary { border: 1px solid #d1d5db; padding: 12px 24px; border-radius: 8px; text-decoration: none; color: #111827; transition: all 0.3s; }
+.hero-card { background: #f3f4f6; border: 2px dashed #9ca3af; padding: 40px; text-align: center; border-radius: 12px; font-weight: 700; }
+@media (max-width: 900px) { .hero-container { grid-template-columns: 1fr; } .hero-content h1 { font-size: 2.2rem; } }
