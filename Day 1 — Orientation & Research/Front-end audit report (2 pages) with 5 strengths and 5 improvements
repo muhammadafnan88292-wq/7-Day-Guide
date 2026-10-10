@@ -1,0 +1,99 @@
+Front-End Website Audit Report
+
+1. Website Strengths
+
+1. Clean and Simple Design
+   The website has a clean and simple design. The layout is easy to understand and does not
+   feel unnecessarily complicated.
+
+1. Easy Navigation
+   The navigation is smooth and easy to use. The main sections, such as Courses, Services,
+   About, and Contact, are clearly separated, making it easy for users to move around the
+   website.
+
+1. Simple and Modern Color Combination
+   The website uses a simple and modern color combination. The colors work well together
+   and give the website a professional appearance.
+
+1. Responsive Design
+   The website works well on different screen sizes. The layout adjusts properly for both
+   smaller and larger screens, which provides a better experience for different devices.
+
+1. Smooth User Experience
+   The website feels smooth while browsing. Pages and sections are easy to access, and there
+   were no major usability problems noticed during the audit
+
+1. Improvement Opportunities
+
+1. HTTPS / Security Certificate Warning
+   A security certificate warning appeared when accessing the website. This should be
+   checked and fixed because users may feel unsafe when a browser displays a security
+   warning.
+
+1. Dark Mode / Night Mode Option
+   The website could include a Dark Mode toggle button. The bright interface can feel
+   uncomfortable to view in low-light conditions, especially at night. A Dark Mode option
+   could make the website more comfortable and improve the user experience.
+
+1. Correct Social Media Link
+   The Facebook icon should link directly to the company’s official Facebook page. Currently,
+   clicking the Facebook icon redirects to the website instead of opening the Facebook page.
+   The link should be checked and connected to the correct social media page.
+
+Front-End Best Practices Summary
+
+A good website should follow these front-end best practices:
+
+1. Clean and Simple UI – Keep the interface clean, simple, and easy to understand.
+2. Easy Navigation – Navigation should be clear, consistent, and easy for users to use.
+3. Responsive Design – The website should work properly on mobile, tablet, and desktop
+   screens.
+4. Consistent Colors and Typography – Use consistent colors and readable fonts
+   throughout the website.
+5. Good User Experience – The website should provide a smooth and comfortable
+   experience for users.
+6. Fast Performance – Optimize images, CSS, and JavaScript to improve loading speed.
+7. Accessibility – Use readable text, proper labels, good contrast, and keyboard-friendly
+   navigation.
+8. Clear Content Structure – Organize content using clear headings and sections.
+9. Functional Links and Buttons – All buttons, navigation links, and social media links
+   should work correctly.
+10. Security and Trust – Use a valid HTTPS/SSL certificate to avoid browser security
+    warnings.
+
+Conclusion
+
+Good front-end development focuses on simplicity, usability, responsiveness,
+performance, accessibility, security, and a smooth user experience
+Day 1 Conclusion
+During Day 1, I completed the following tasks:
+
+1. Website Front-End Audit
+   I reviewed the AI DigiExpert website and identified its main strengths and areas for
+   improvement.
+2. Front-End Best Practices Summary
+   I prepared a one-page summary covering important front-end practices such as clean UI,
+   easy navigation, responsive design, performance, accessibility, and security.
+3. Development Environment Setup
+   I set up my development environment using VS Code and GitHub.
+4. GitHub Repository Setup
+   I created a GitHub account and repository, then cloned the repository into VS Code.
+5. Project Files Creation
+   I created the basic project files, including HTML, CSS, and JavaScript files.
+6. Live Server Setup
+   I installed the Live Server extension in VS Code and successfully ran the project locally.
+   The Live Server worked properly without any issues.
+
+I added the GitHub repository link to the report for reference.
+Overall Learning
+
+Day 1 helped me understand the basics of front-end website auditing, UI best practices,
+GitHub repository management, VS Code development setup, and running a project locally
+using Live Server
+
+VS Code & Live Server Setup
+I installed the Live Server extension in VS Code and successfully
+ran my HTML project locally. The website opened in the browser
+through Live Server and worked properly without any issues.
+
+screen shot persent in image folder
