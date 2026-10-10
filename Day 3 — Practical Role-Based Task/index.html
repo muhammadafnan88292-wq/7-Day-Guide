@@ -1,102 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day 3 - UI Components | Afnan</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/featues.css">
-  <link rel="stylesheet" href="css/testmonials.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 3 - Fully Responsive - Afnan</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- COMPONENT 1: NAVBAR -->
-  <nav class="navbar" aria-label="Main Navigation">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">Afnan.</a>
-      <ul class="nav-links">
-        <li><a href="#home">Hero</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-<!-- COMPONENT 2: HERO SECTION -->
-  <section class="hero" id="home">
-    <div class="hero-container">
-      <div class="hero-content">
-        <h1>Build Modern UI with Clean Code</h1>
-        <p>5 reusable, responsive components built with semantic HTML, Flexbox, Grid and accessibility in mind.</p>
-        <div class="hero-buttons">
-          <a href="#features" class="btn-primary">View Components</a>
-          <a href="#" class="btn-secondary">GitHub Repo</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="hero-card">HTML + CSS + Responsive + Accessible</div>
+<nav class="navbar" aria-label="Main Navigation">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">Afnan.</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Hero</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1>Build Modern UI with Reusable Components</h1>
+      <p>5 responsive, accessible components using semantic HTML, Flexbox, Grid with hover effects. Now 100% mobile optimized.</p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn-primary">View Components</a>
+        <a href="#" class="btn-secondary">GitHub</a>
       </div>
     </div>
-  </section>
-  <section class="features" id="features">
-  <h2 class="section-title">My Services</h2>
-  <p class="section-subtitle">Reusable cards with Grid and hover effects</p>
-
-  <div class="feature-grid">
-    <article class="feature-card">
-      <div class="icon">⚡</div>
-      <h3>Fast Performance</h3>
-      <p>Optimized CSS with smooth transitions for best user experience.</p>
-      <a href="#">Learn more →</a>
-    </article>
-
-    <article class="feature-card">
-      <div class="icon">📱</div>
-      <h3>Responsive Design</h3>
-      <p>100% responsive on mobile, tablet, and desktop using Grid.</p>
-      <a href="#">Learn more →</a>
-    </article>
-
-    <article class="feature-card">
-      <div class="icon">♿</div>
-      <h3>Accessible Code</h3>
-      <p>Semantic HTML and keyboard focus support for everyone.</p>
-      <a href="#">Learn more →</a>
-    </article>
+    <div class="hero-card">✓ Fully Responsive<br>Mobile + Tablet + Desktop</div>
   </div>
 </section>
-  <!-- COMPONENT 4: TESTIMONIALS -->
-  <section class="testimonials" id="testimonials">
-  <h2 class="section-title">What People Say</h2>
 
+<section class="features" id="features">
+  <h2 class="section-title">Feature Cards</h2>
+  <div class="features-grid">
+    <article class="feature-card"><div class="icon">⚡</div><h3>Fast & Lightweight</h3><p>No frameworks, pure CSS optimized.</p></article>
+    <article class="feature-card"><div class="icon">📱</div><h3>Fully Responsive</h3><p>Mobile menu + Grid 3→1 perfect.</p></article>
+    <article class="feature-card"><div class="icon">♿</div><h3>Accessible</h3><p>Semantic HTML, ARIA, focus states.</p></article>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <h2 class="section-title">Testimonials</h2>
   <div class="testimonial-grid">
-    <article class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"Afnan's components are clean and production-ready."</blockquote>
-      <div class="author">
-        <img src="https://i.pravatar.cc/100?img=12" alt="Ali Khan">
-        <div>
-          <h4>Ali Khan</h4>
-          <span>Frontend Lead</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"Responsive and accessible by default. Saved us hours."</blockquote>
-      <div class="author">
-        <img src="https://i.pravatar.cc/100?img=32" alt="Sara Ahmed">
-        <div>
-          <h4>Sara Ahmed</h4>
-          <span>UI Designer</span>
-        </div>
-      </div>
-    </article>
+    <article class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"Now it looks perfect on mobile! Great job."</blockquote><div class="author"><img src="https://i.pravatar.cc/100?img=1" alt="Ahmed"><div><h4>Ahmed Khan</h4><p>Frontend Dev</p></div></div></article>
+    <article class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"Responsive done right with hamburger menu."</blockquote><div class="author"><img src="https://i.pravatar.cc/100?img=2" alt="Sara"><div><h4>Sara Ali</h4><p>UI Designer</p></div></div></article>
   </div>
 </section>
-  
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col"><h3 class="footer-logo">Afnan.</h3><p>Building clean, responsive, accessible UI components.</p></div>
+    <div class="footer-col"><h4>Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#features">Features</a></li><li><a href="#testimonials">Testimonials</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li>Peshawar, Pakistan</li></ul><div class="social-links"><a href="#" aria-label="GitHub">GH</a><a href="#" aria-label="LinkedIn">LI</a><a href="#" aria-label="Twitter">TW</a></div></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Afnan. Fully Responsive Version.</p></div>
+</footer>
+
+<script>
+// Mobile menu toggle - FIX FOR RESPONSIVENESS
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+});
+// Close menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    hamburger.textContent = '☰';
+  });
+});
+</script>
 </body>
 </html>
