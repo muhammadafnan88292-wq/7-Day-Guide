@@ -1,0 +1,39 @@
+Day 4 Project Documentation
+
+Project: AI DigiExperts Responsive Landing Page
+
+Objective
+
+The purpose of this project was to create a modern, responsive landing page promoting AI and web development learning services using HTML, CSS, and JavaScript.
+
+Technologies Used
+
+- HTML5 for the semantic page structure.
+- CSS3 for styling, responsive layouts, animations, transitions, and hover effects.
+- JavaScript for mobile navigation, FAQ accordion functionality, scroll-reveal animations, and contact-form validation.
+
+Main Features
+
+The landing page includes a navigation bar, hero section, features, testimonials, pricing and calls to action, FAQ accordion, contact form, and footer. It uses responsive CSS Grid and Flexbox layouts to adapt to desktop, tablet, and mobile screens. Accessibility features include semantic elements, keyboard focus indicators, descriptive form labels, and reduced-motion support.
+
+Testing
+
+The page should be tested at desktop, tablet, and mobile widths. Navigation links, the mobile menu, FAQ accordion, animations, and form validation should be checked before submission. The contact form is a front-end demonstration and does not transmit messages.
+
+Deployment
+
+GitHub Repository: [https://github.com/muhammadafnan88292-wq/7-Day-Guide/tree/main/Day%204%20%E2%80%94%20Real%20Company%20Contribution]
+
+Live Website: [https://ai-digital-experts.netlify.app/]
+
+Screenshots
+
+Desktop: "screenshots/desktop.png"
+
+Tablet: "screenshots/tablet.png"
+
+Mobile: "screenshots/mobile.png"
+
+Conclusion
+
+This project demonstrates practical front-end development, responsive design, basic accessibility, JavaScript interactivity, and GitHub-based deployment. Company-specific content, pricing, and testimonials should be verified before the website is presented as an official company deliverable.
