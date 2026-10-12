@@ -1,0 +1,8 @@
+[
+  {"id":"web","title":"Web Development","category":"development","icon":"⌘","description":"Explore HTML, CSS, JavaScript, and responsive front-end website development."},
+  {"id":"ui","title":"UI & UX Design","category":"creative","icon":"◈","description":"Learn how thoughtful layouts, colors, and interactions create better digital experiences."},
+  {"id":"ai","title":"AI Exploration","category":"creative","icon":"✳","description":"Discover foundational AI concepts and creative ways technology can help solve problems."},
+  {"id":"responsive","title":"Responsive Websites","category":"development","icon":"▣","description":"Build layouts that adapt smoothly to mobile, tablet, and desktop screens."},
+  {"id":"projects","title":"Project Development","category":"development","icon":"↗","description":"Practice problem solving by building useful applications and portfolio projects."},
+  {"id":"digital","title":"Digital Creativity","category":"creative","icon":"✦","description":"Combine design thinking and technology to turn original ideas into digital projects."}
+]
