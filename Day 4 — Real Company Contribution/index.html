@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore AI, web development, and practical technology training with AI DigiExperts.">
   <title>AI DigiExperts | Learn. Build. Innovate.</title>
+  <link rel="stylesheet" href="style.main.css">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
-<body>
+  <body>
+  <a href="#main-content" class="skip-link">
+    Skip to main content
+  </a>
   <header class="header" id="top">
     <nav class="navbar container" aria-label="Main navigation">
       <a class="logo" href="#home"><span>AI</span> DigiExperts</a>
@@ -29,7 +32,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-content reveal">
@@ -183,24 +186,98 @@
           <h2>Questions? <span class="gradient-text">Start here.</span></h2>
           <p>Find answers to common questions about learning and getting started.</p>
         </div>
-        <div class="faq-list reveal">
-          <article class="faq-item">
-            <h3><button class="faq-question" aria-expanded="false">What can I learn? <span>+</span></button></h3>
-            <div class="faq-answer"><p>You can explore web development, AI concepts, and practical project-building opportunities. Confirm the current course list with the company.</p></div>
-          </article>
-          <article class="faq-item">
-            <h3><button class="faq-question" aria-expanded="false">Do I need experience? <span>+</span></button></h3>
-            <div class="faq-answer"><p>Beginners can start by learning foundational concepts. Check program prerequisites before enrolling.</p></div>
-          </article>
-          <article class="faq-item">
-            <h3><button class="faq-question" aria-expanded="false">How do I get program details? <span>+</span></button></h3>
-            <div class="faq-answer"><p>Send a message using the enquiry form below to ask about available programs, schedules, and fees.</p></div>
-          </article>
-          <article class="faq-item">
-            <h3><button class="faq-question" aria-expanded="false">Will I build projects? <span>+</span></button></h3>
-            <div class="faq-answer"><p>This sample page highlights project-based learning. Contact the company to confirm the projects included in each program.</p></div>
-          </article>
-        </div>
+       <div class="faq-list reveal">
+
+  <article class="faq-item">
+    <h3>
+      <button
+        class="faq-question"
+        id="faq-question-1"
+        aria-expanded="false"
+        aria-controls="faq-answer-1">
+        What can I learn?
+        <span aria-hidden="true">+</span>
+      </button>
+    </h3>
+
+    <div class="faq-answer" id="faq-answer-1"
+      role="region" aria-labelledby="faq-question-1"
+      inert>
+      <p>
+        You can explore web development, AI concepts,
+        and practical project-building opportunities.
+      </p>
+    </div>
+  </article>
+
+  <article class="faq-item">
+    <h3>
+      <button
+        class="faq-question"
+        id="faq-question-2"
+        aria-expanded="false"
+        aria-controls="faq-answer-2">
+        Do I need experience?
+        <span aria-hidden="true">+</span>
+      </button>
+    </h3>
+
+    <div class="faq-answer" id="faq-answer-2"
+      role="region" aria-labelledby="faq-question-2"
+      inert>
+      <p>
+        Beginners can start by learning foundational concepts.
+        Check program prerequisites before enrolling.
+      </p>
+    </div>
+  </article>
+
+  <article class="faq-item">
+    <h3>
+      <button
+        class="faq-question"
+        id="faq-question-3"
+        aria-expanded="false"
+        aria-controls="faq-answer-3">
+        How do I get program details?
+        <span aria-hidden="true">+</span>
+      </button>
+    </h3>
+
+    <div class="faq-answer" id="faq-answer-3"
+      role="region" aria-labelledby="faq-question-3"
+      inert>
+      <p>
+        Send a message using the enquiry form below to ask
+        about available programs, schedules, and fees.
+      </p>
+    </div>
+  </article>
+
+  <article class="faq-item">
+    <h3>
+      <button
+        class="faq-question"
+        id="faq-question-4"
+        aria-expanded="false"
+        aria-controls="faq-answer-4">
+        Will I build projects?
+        <span aria-hidden="true">+</span>
+      </button>
+    </h3>
+
+    <div class="faq-answer" id="faq-answer-4"
+      role="region" aria-labelledby="faq-question-4"
+      inert>
+      <p>
+        This sample page highlights project-based learning.
+        Contact the company to confirm the projects included
+        in each program.
+      </p>
+    </div>
+  </article>
+
+</div>
       </div>
     </section>
 
@@ -238,6 +315,7 @@
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
+  <script src="hello.min.js" defer></script>
   <script src="hello.js"></script>
 </body>
 </html>

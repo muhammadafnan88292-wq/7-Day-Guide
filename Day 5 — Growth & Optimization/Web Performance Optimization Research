@@ -1,0 +1,41 @@
+Day 5 — Web Performance Optimization Research
+
+Project: AI DigiExperts Landing Page
+
+Introduction
+
+Web performance optimization is the process of improving website loading speed, responsiveness, and efficiency. A fast website creates a better user experience and can improve search engine visibility.
+
+1. Image Compression
+
+Image compression reduces image file sizes without unnecessarily reducing visual quality. Modern image formats such as WebP and AVIF often provide smaller files than traditional JPEG or PNG formats. Proper image dimensions also help reduce unnecessary downloads.
+
+Benefits: Faster loading, reduced bandwidth usage, and improved user experience.
+
+2. Lazy Loading
+
+Lazy loading delays the downloading of off-screen images until they are close to being displayed. HTML supports this feature using "loading="lazy"" on image elements.
+
+Benefits: Faster initial page loading and lower data usage.
+
+Important images visible at the top of the page should generally not be lazy-loaded.
+
+3. CSS and JavaScript Minification
+
+Minification removes unnecessary whitespace, comments, and formatting from CSS and JavaScript files. It reduces file sizes without intentionally changing the code's behavior.
+
+Benefits: Smaller downloads and potentially faster page loading.
+
+4. Browser Caching
+
+Browser caching stores previously downloaded website resources for reuse. When users revisit a website, cached resources can reduce network requests and improve loading speed.
+
+Benefits: Faster repeat visits, reduced bandwidth, and less server load.
+
+5. Lighthouse Performance Testing
+
+Google Lighthouse is a tool used to evaluate website quality. It measures Performance, Accessibility, Best Practices, and SEO. Lighthouse helps developers identify issues such as slow-loading resources, accessibility problems, and missing SEO information.
+
+Conclusion
+
+Image compression, lazy loading, minification, and caching are important techniques for creating efficient websites. Applying these practices and testing with Lighthouse helps developers improve the quality of their front-end projects.

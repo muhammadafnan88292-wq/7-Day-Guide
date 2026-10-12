@@ -242,3 +242,41 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cyan); outline-
   }
   .reveal { opacity: 1; transform: none; }
 }
+/* Day 5 - Accessibility and Performance Improvements */
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 1000;
+  padding: 12px 20px;
+  background: #ffffff;
+  color: #111827;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+.contact-form [aria-invalid="true"] {
+  border-color: #ff9aab;
+  box-shadow: 0 0 0 2px rgba(255, 154, 171, 0.2);
+}
+
+@media (hover: none) {
+  .feature-card:hover,
+  .price-card:hover,
+  .button:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit,
+  .ai-card,
+  .floating-chip {
+    animation: none !important;
+  }
+}

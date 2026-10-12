@@ -33,22 +33,30 @@ document.addEventListener("click", (event) => {
   }
 });
 
-// FAQ accordion
+// Accessible FAQ accordion
 const faqQuestions = document.querySelectorAll(".faq-question");
 
 faqQuestions.forEach((button) => {
   button.addEventListener("click", () => {
     const currentItem = button.closest(".faq-item");
-    const willOpen = button.getAttribute("aria-expanded") !== "true";
+    const currentAnswer = currentItem.querySelector(".faq-answer");
+
+    const willOpen =
+      button.getAttribute("aria-expanded") !== "true";
 
     faqQuestions.forEach((otherButton) => {
+      const item = otherButton.closest(".faq-item");
+      const answer = item.querySelector(".faq-answer");
+
       otherButton.setAttribute("aria-expanded", "false");
-      otherButton.closest(".faq-item").classList.remove("open");
+      item.classList.remove("open");
+      answer.inert = true;
     });
 
     if (willOpen) {
       button.setAttribute("aria-expanded", "true");
       currentItem.classList.add("open");
+      currentAnswer.inert = false;
     }
   });
 });
@@ -80,26 +88,48 @@ if ("IntersectionObserver" in window && !reducedMotion) {
 // Automatically update copyright year
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-// Contact form validation
+// Accessible contact form validation
 const contactForm = document.querySelector("#contact-form");
 const formStatus = document.querySelector("#form-status");
 
+const formFields = contactForm.querySelectorAll(
+  "input, textarea"
+);
+
+formFields.forEach((field) => {
+  field.addEventListener("input", () => {
+    field.removeAttribute("aria-invalid");
+  });
+});
+
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  formStatus.className = "form-status";
+
   formStatus.textContent = "";
+  formStatus.className = "form-status";
+
+  formFields.forEach((field) => {
+    field.removeAttribute("aria-invalid");
+  });
 
   if (!contactForm.checkValidity()) {
-    contactForm.reportValidity();
+    const invalidField =
+      contactForm.querySelector(":invalid");
+
+    invalidField.setAttribute("aria-invalid", "true");
+
     formStatus.classList.add("error");
     formStatus.textContent =
-      "Please complete every field with valid information.";
+      "Please correct the highlighted field: " +
+      invalidField.validationMessage;
+
+    invalidField.focus();
     return;
   }
 
   formStatus.classList.add("success");
   formStatus.textContent =
-    "Validation successful! This demo form does not send messages yet.";
+    "Validation successful! This demo form does not send messages.";
 
   contactForm.reset();
 });
